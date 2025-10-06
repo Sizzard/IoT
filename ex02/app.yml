@@ -6,6 +6,9 @@ spec:
   destination:
     namespace: dev
     server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      enabled: true
   source:
     path: dev
     repoURL: https://github.com/Sizzard/IoT-Application/
